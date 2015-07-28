@@ -10,8 +10,43 @@
   </head>
 
   <body>
-    <h1>About Me</h1>
-    <p>All about moi.</p>
+		<!--desktop navigation-->
+		<nav class="menu off hidden-sm hidden-xs">
+
+			<ul class="nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="portfolio.html">My Portfolio</a></li>
+				<li><a href="music.html">My Music</a></li>
+				<li><a href="contact.html">Contact Me</a></li>
+			</ul>
+
+		</nav>
+
+		<a href="#0" class="menu-toggle navicon menu1 hidden-sm hidden-xs">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a><!--end desktop nav-->
+
+		<main>
+			<h1>About Me</h1>
+
+	    <div class="container about">
+		    <p>I'm a coder, sound designer, and music producer. I've recently completed the front-end course in Code Louisville (July 2015) and am continuing forward with with my coding education both in and outside of another Code Louisville session.</p>
+				<p>I've worked with numerous local theater companies as a sound designer and technician as well as sound/light operator. I have a music technology degree from Bellarmine University, an assistant producer credit (on Andrea Davidson's "Retracing Steps") and dozens of my own tracks.</p>
+				<p>Get ahold of me if you would like me to design a website for you, your business, or other client! I'm also open to opportunities to design sound for theater productions or produce tracks for use in movies, games, or release in EP/LP format.</p>
+				<!--mobile navigation-->
+		    <div class="container mobile hidden-md hidden-lg">
+		      <a href="about.html" class="btn btn-primary" id="leftbutton" role="button">About Me</a>
+		      <a href="music.html" class="btn btn-info" id="rightbutton" role="button">My Music</a>
+		      <a href="portfolio.html" class="btn btn-primary" id="leftbutton" role="button">My Portfolio</a>
+		      <a href="contact.html" class="btn btn-info" id="rightbutton" role="button">Contact Me</a>
+		    </div> <!--end mobile nav-->
+			</div>
+
+		</main>
+
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
