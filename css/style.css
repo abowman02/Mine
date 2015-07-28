@@ -1,0 +1,368 @@
+/*html elements*/
+h1, p {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 10px;
+}
+
+html, body {
+  background: -webkit-linear-gradient(left top, rgba(255, 182, 118, .92), rgba(255, 255, 255, .92)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(bottom right, rgba(255, 182, 118, .92), rgba(255, 255, 255, .92)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(bottom right, rgba(255, 182, 118, .92), rgba(255, 255, 255, .92)); /*Fx 3.6-15*/
+  background: linear-gradient(to bottom right, rgba(255, 182, 118, .92), rgba(255, 255, 255, .92)); /*standard*/
+}
+
+/*pictures*/
+#mainimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 80vh;
+  padding: 0 0 15px 0;
+}
+
+/*buttons*/
+.btn {
+  display: block;
+  width: 200px;
+}
+
+#rightbutton {
+  float: right;
+  clear: left;
+  margin-right: 25%;
+}
+
+#leftbutton {
+  float: left;
+  clear: right;
+  margin-left: 25%;
+}
+
+
+
+/*! ============================================================
+ * Based entirely on Animated Navicons by Hugo Darby-Brown:
+ * http://codepen.io/hugo/pen/LmJsf
+ * ============================================================ */
+/* ========= Menu Icon Base ======== */
+.menu1, .menu2, .menu3, .menu4, .menu5, .menu6 {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 5px;
+  height: 6em;
+  position: relative;
+  width: 6em;
+  -webkit-tap-highlight-color: transparent;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.menu1 span, .menu2 span, .menu3 span, .menu4 span, .menu5 span, .menu6 span {
+  display: block;
+  background: #fff;
+  -moz-border-radius: 2em;
+  -webkit-border-radius: 2em;
+  border-radius: 2em;
+  backface-visibility: hidden;
+  height: 0.8em;
+  position: absolute;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ============ Menu1 ============ */
+.menu1 span {
+  left: 0;
+}
+.menu1 span:nth-child(1) {
+  top: 1em;
+}
+.menu1 span:nth-child(2) {
+  top: 2.6em;
+}
+.menu1 span:nth-child(3) {
+  top: 4.2em;
+}
+.menu1.open span:nth-child(1) {
+  -moz-transform: rotate(45deg) translate(1.1em, 1.1em);
+  -ms-transform: rotate(45deg) translate(1.1em, 1.1em);
+  -webkit-transform: rotate(45deg) translate(1.1em, 1.1em);
+  transform: rotate(45deg) translate(1.1em, 1.1em);
+}
+.menu1.open span:nth-child(2) {
+  opacity: 0;
+  -moz-transition: none;
+  -o-transition: none;
+  -webkit-transition: none;
+  transition: none;
+}
+.menu1.open span:nth-child(3) {
+  -moz-transform: rotate(-45deg) translate(1.1em, -1.1em);
+  -ms-transform: rotate(-45deg) translate(1.1em, -1.1em);
+  -webkit-transform: rotate(-45deg) translate(1.1em, -1.1em);
+  transform: rotate(-45deg) translate(1.1em, -1.1em);
+}
+
+/* ============ Menu2 ============ */
+.menu2 span {
+  left: 0;
+}
+.menu2 span:nth-child(1) {
+  top: 2.5em;
+}
+.menu2 span:nth-child(2) {
+  transform: rotate(90deg);
+  top: 2.5em;
+}
+.menu2.open span:nth-child(2) {
+  transform: rotate(0deg);
+}
+
+/* ============ Menu3 ============ */
+.menu3 span {
+  left: 0;
+}
+.menu3 span:nth-child(1) {
+  top: 1em;
+}
+.menu3 span:nth-child(2) {
+  top: 2.6em;
+}
+.menu3 span:nth-child(3) {
+  top: 4.2em;
+}
+.menu3.open span:nth-child(1) {
+  transform: translateY(1.6em);
+}
+.menu3.open span:nth-child(3) {
+  transform: translateY(-1.6em);
+}
+
+/* ============ Menu4 ============ */
+.menu4 span {
+  width: 50%;
+}
+.menu4 span:nth-child(1) {
+  border-radius: setting(border-radius) 0 0 setting(border-radius);
+  left: 0;
+  top: 1em;
+}
+.menu4 span:nth-child(2) {
+  border-radius: 0 setting(border-radius) setting(border-radius) 0;
+  top: 1em;
+  right: 0;
+}
+.menu4 span:nth-child(3) {
+  left: 0;
+  top: 2.6em;
+  width: 100%;
+}
+.menu4 span:nth-child(4) {
+  border-radius: setting(border-radius) 0 0 setting(border-radius);
+  left: 0;
+  top: 4.2em;
+}
+.menu4 span:nth-child(5) {
+  border-radius: 0 setting(border-radius) setting(border-radius) 0;
+  right: 0;
+  top: 4.2em;
+}
+.menu4.open span:nth-child(1) {
+  transform: rotate(45deg) translate(0.8em);
+}
+.menu4.open span:nth-child(2) {
+  transform: rotate(-45deg) translate(-0.9em);
+}
+.menu4.open span:nth-child(3) {
+  opacity: 0;
+}
+.menu4.open span:nth-child(4) {
+  transform: rotate(-45deg) translate(0.8em);
+}
+.menu4.open span:nth-child(5) {
+  transform: rotate(45deg) translate(-0.9em);
+}
+
+/* ============ Menu5 ============ */
+.menu5 span {
+  width: 100%;
+}
+.menu5 span:nth-child(1) {
+  left: 0;
+  top: 1em;
+}
+.menu5 span:nth-child(2) {
+  border-radius: 0 setting(border-radius) setting(border-radius) 0;
+  right: 0;
+  top: 2.6em;
+  width: 50%;
+}
+.menu5 span:nth-child(3) {
+  border-radius: setting(border-radius) 0 0 setting(border-radius);
+  left: 0;
+  top: 2.6em;
+  width: 50%;
+}
+.menu5 span:nth-child(4) {
+  left: 0;
+  top: 4.2em;
+}
+.menu5.open span:nth-child(1) {
+  opacity: 0;
+}
+.menu5.open span:nth-child(2) {
+  border-radius: setting(border-radius);
+  transform: rotate(45deg);
+  width: 100%;
+}
+.menu5.open span:nth-child(3) {
+  border-radius: setting(border-radius);
+  transform: rotate(-45deg);
+  width: 100%;
+}
+.menu5.open span:nth-child(4) {
+  opacity: 0;
+}
+
+/* ============ Menu6 ============ */
+.menu6 span {
+  left: 0;
+}
+.menu6 span:nth-child(1) {
+  top: 2.5em;
+}
+.menu6 span:nth-child(2) {
+  transform: rotate(90deg);
+  top: 2.5em;
+}
+.menu6.open {
+  transform: rotate(135deg) translatey(0.3em);
+}
+
+/*!
+ * Animated navicon credit to @hugo - http://codepen.io/hugo/pen/LmJsf
+ * My fork (attached as an external resource):
+ * http://codepen.io/jreece/pen/fIdqg
+*/
+.menu {
+  position: fixed;
+  overflow-y: auto;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-linear-gradient(left top,rgba(158, 223, 255, .92), rgba(255, 255, 255, .92)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(bottom right,rgba(158, 223, 255, .92), rgba(255, 255, 255, .92)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(bottom right,rgba(158, 223, 255, .92), rgba(255, 255, 255, .92)); /*Fx 3.6-15*/
+  background: linear-gradient(to bottom right, rgba(158, 223, 255, .92), rgba(255, 255, 255, .92)); /*standard*/
+  border-top: 1px solid #3D3527;
+  -moz-transition: opacity 800ms;
+  -o-transition: opacity 800ms;
+  -webkit-transition: opacity 800ms;
+  transition: opacity 800ms;
+}
+.menu.off {
+  opacity: 0;
+  z-index: -1;
+  -moz-transition: opacity 0;
+  -o-transition: opacity 0;
+  -webkit-transition: opacity 0;
+  transition: opacity 0;
+}
+.menu .nav, .menu .nav li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.menu .nav a {
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  background: transparent;
+  border-bottom: 1px solid #3f3f3f;
+  color: #3f3f3f;
+  font-size: 300%;
+  letter-spacing: 1vw;
+  line-height: 17vh;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.menu .nav a:hover, .menu .nav a:focus {
+  background: rgba(122, 211, 255, 0.9);
+  color: #fff;
+  -moz-transition-property: background-color, color;
+  -o-transition-property: background-color, color;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -moz-transition-duration: 800ms;
+  -o-transition-duration: 800ms;
+  -webkit-transition-duration: 800ms;
+  transition-duration: 800ms;
+}
+
+.menu-toggle {
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  margin: 4% 6%;
+}
+.menu-toggle > span {
+  background: #f55;
+}
+.menu-toggle.open {
+  background: #3D3527;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*html {
+  background: #3D3527;
+  color: #EDE1CC;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+}*/
+
+a {
+  color: #EDE1CC;
+}
+
+.container {
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+article {
+  padding: 3em;
+}
+
+code {
+  margin: 0 0.3em;
+  padding: 0.1em 0.3em;
+  background: rgba(237, 225, 204, 0.5);
+  -moz-border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+  color: #3D3527;
+}
+
+iframe {
+  background: #ede1cc;
+  border: 1em solid #ede1cc;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+}
